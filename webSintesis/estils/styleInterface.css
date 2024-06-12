@@ -1,0 +1,194 @@
+*{
+  box-sizing: border-box;
+}
+.user_interface *{
+  border-color: #0056b3;
+  color: #0056b3;
+}
+
+.user_interface{
+  width: 100%;
+  height: calc(100% + 1px);
+  background-color: #e2edf9;
+}
+
+.user_interface aside{
+float: left;
+width: 20%;
+height: 100%;
+border-right: 1px solid ;
+}
+
+.user_interface aside .aside-option{
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.aside-option:hover{
+  background-color:#007bff;
+  color: white;
+  transition: 400ms;
+  cursor: pointer;
+}
+.user_interface_container{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Estilos para el formulario */
+#form {
+  width: 100%;
+  max-width: 400px; /* Máximo ancho del formulario */
+  padding: 20px;
+  border: 1px solid ;
+  border-radius: 10px;
+  
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"],
+select, input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid ;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.dades-usuari {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+}
+.dades-usuari h3{
+  color: #007bff;
+ font-size:40px ;
+text-align: left !important;
+}
+
+.dades-usuari p {
+  margin: 20px 0; /* Espacio entre los párrafos */
+}
+
+/* Estilos para el contenedor de resultados */
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.ingestes{
+  width: 100%;
+  height: 100%;
+
+}
+/* styles.css */
+
+.ingestes {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ingestes h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ingestes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingestes li {
+    margin-bottom: 10px;
+}
+
+.ingestes form {
+    margin-top: 20px;
+}
+
+.ingestes label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ingestes select,
+.ingestes input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ingestes button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ingestes button:hover {
+    background-color: #0056b3;
+}
+.foodList{
+  background-color:#0056b3 ;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.foodList b{color: white;}
+
+.foodList i{
+  color: rgb(255, 0, 0);
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* Estilos responsive */
+@media screen and (max-width: 600px) {
+  #form {
+    max-width: 100%; /* Ancho máximo del formulario en dispositivos pequeños */
+  }
+}

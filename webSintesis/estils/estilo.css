@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ 
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #638aff;
+  }
+
+
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #638aff;
+    border-radius: 10px;
+  }
+
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+.contenedor-header{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(226 237 249);
+    z-index: 99;
+    padding: 0 20px;
+    top: 0;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #004aad;
+    font-weight: 600;
+}
+.txtRojo{
+    color:#ff1133;
+}
+.contenedor-header header nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #004aad;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.contenedor-header header nav a:hover{
+    text-shadow: 1px 1px 20px #345e96;
+}
+.contenedor-header header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+}
+.contenedor-header header .redes a:hover{
+    color: #ff1133;
+}
+.nav-responsive{
+    display: none;
+    font-size: 25px;
+ }
+
+
+ /* LOGIN */
+ .contenedor{
+width: 100%;
+height: calc(100vh - 140.8px);
+position: absolute;
+top: 140.8px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(00deg, rgb(150 190 239) 0%, rgb(150 190 238) 35%, rgba(255,255,255,1) 100%);
+ }
+ .contenedor-login{
+    width: 50%;
+    height: 80%;
+
+    border-radius: 10px;
+ }
+ .contenedor-calc{
+    width: 50%;
+    height: 100%;
+
+    border-radius: 10px;
+ }
+ .titulo-login{
+ height: 10%;
+ line-height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #1891c8;;
+ color: white;
+ border-radius: 10px 10px 0px 0px;
+ }
+ .formulario-login{
+    height: 90%;
+    width: 100%;
+    background-color: #e2edf9;
+    border-radius: 0px 0px 10px 10px;
+    
+ }
+ .formulario-calc{
+    height: 90%;
+    width: 100%;
+    background-color: #e2edf9;
+    border-radius: 0px 0px 10px 10px;
+    
+ }
+ 
+ .formulario-login form{
+width: 100%;
+height: 100%;
+ }
+ .formulario-login p{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+.formulario-login form p input{
+    width: 60%;
+    height: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    background-color: #e2edf9;
+    color: #004aad;
+    
+    
+}
+.formulario-login form p input:focus{
+    background-color: #e6f3f9;;
+    color: rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 14px 3px rgba(0,74,173,1);
+-moz-box-shadow: 0px 0px 14px 3px rgba(0,74,173,1);
+box-shadow: 0px 0px 14px 3px rgba(0,74,173,1);
+border: 0;
+transition: 500ms;
+}
+
+.formulario-login form p input[type=submit]{
+    width: 80%;
+    height: auto;
+    color: white;
+    background-color: #004aad;
+    padding: 10px;
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.formulario-calc form{
+    width: 100%;
+    height: 100%;
+     }
+     .formulario-calc p{
+        width: 100%;
+        height: 17%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+     }
+    .formulario-calc form p input{
+        width: 60%;
+        height: 30px;
+        padding: 10px;
+        margin-left: 10px;
+        background-color: transparent;
+        border-style: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        background-color: #e2edf9;
+        color: #004aad;
+        
+        
+    }
+    .formulario-calc form p input:focus{
+        background-color: #e6f3f9;;
+        color: rgb(0, 0, 0);
+        -webkit-box-shadow: 0px 0px 14px 3px rgba(0,74,173,1);
+    -moz-box-shadow: 0px 0px 14px 3px rgba(0,74,173,1);
+    box-shadow: 0px 0px 14px 3px rgba(0,74,173,1);
+    border: 0;
+    transition: 500ms;
+    }
+    
+    .formulario-calc form p input[type=submit]{
+        width: 80%;
+        height: auto;
+        color: white;
+        background-color: #004aad;
+        padding: 10px;
+        letter-spacing: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+
+/* INICIO */
+
+.contenedor-inicio{
+    width: 100%;
+min-height: calc(100vh - 140.8px);
+margin-top: 140.8px;
+
+}
+.contenedor-inicio1{
+    width: 100%;
+height: calc(100vh - 140.8px);
+margin-top: 140.8px;
+
+}
+.contenedor-info{
+    width: 100%;
+    height: 100%;
+    background-color:#1891c8;
+}
+
+.text-informacio{
+    width: 50%;
+    min-width: 570px;
+    height: auto;
+    line-height: 35px;
+    padding: 40px;
+    border-radius: 10px;
+    background: #004aad;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: auto;
+    z-index: 10;
+    max-height: 70%;
+}
+.d1, .d2, .d3{
+    font-size: 400px;
+    color: #94d6f559;
+    position: absolute;
+}
+.arrow{
+    font-size: 100px;
+    background-color:#003a54;
+    color:#ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    z-index: 10;
+    cursor: pointer;
+}
+i.d1.fa-solid.fa-dumbbell {
+    left: 949px;
+    top: 29px;
+    transform: rotate(45deg);
+    animation: pesa1 500ms cubic-bezier(0.61, 0.04, 0, 0.96);
+    
+}
+i.d2.fa-solid.fa-dumbbell {
+    left: -85px;
+    top: -18px;
+    transform: rotate(136deg);
+    animation: pesa2 500ms cubic-bezier(0.61, 0.04, 0, 0.96);
+    
+}
+i.d3.fa-solid.fa-dumbbell {
+    left: 393px;
+    top: 400px;
+    transform: rotate(12deg);
+    animation: pesa3 500ms cubic-bezier(0.61, 0.04, 0, 0.96);
+}
+.contenedor-info2{
+    width: 100%;
+    height: calc(100vh - 140.8px);
+    position: relative;
+    background:#1891c8 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+.contenedor-info2 h2{
+    color:white;
+    text-align: center;
+    font-size: 100px;
+    z-index: 1;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  @keyframes pesa1 {
+    0% {
+      left: -600px;
+      top: 50px;
+    }
+    100% {
+          left: 949px;
+          top: 29px;
+    }
+  }
+    @keyframes pesa2 {
+    0% {
+      left: -600px;
+      top: 50px;
+    }
+    100% {
+        left: -85px;
+        top: -18px;
+    }
+  }
+    @keyframes pesa3 {
+    0% {
+      left: -600px;
+      top: 50px;
+    }
+    100% {
+        left: 393px;
+        top: 400px;
+    }
+  }
+  
+/* SERVEIS */
+.bg{
+    background-color:#1891c8
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    align-items: center;
+  }
+  .serveis-title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  
+  .service {
+    border: 1px solid white;
+    background-color:#004aad;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: relative;
+  }
+  
+  
+  .price {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 50px);
+  }
+  
+  .btn:hover {
+    border: 2px solid white;
+  }
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 900px) {
+    header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+    header .redes{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#151623;
+        z-index: 99;
+    }
+    nav.responsive a{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 30px;
+    }
+    
+    .contenedor-login{
+        width: 80%;
+    }
+    .text-informacio{
+        position: static;
+        width: 80%;
+        min-width: 0;
+        margin: auto;
+    }
+    .contenedor-info2 h2{
+        font-size: 50px;
+    }
+
+}
+.line{
+    background: white;
+    width: 80%;
+    height: 2px;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px
+}
+
+
+/*footer*/
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        background:#004aad !important;
+       color: white;
+       font-weight: bold;
+        padding: 20px 0;
+        text-align: center;
+        height: 224.55px;
+        width: 100%;
+    }
+    .footer .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .container1 div {
+        margin: 10px 0;
+    }
+    .footer .container1 div a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .footer .container1 div a:hover {
+        text-decoration: underline;
+    }
+    .footer .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .social-icons a {
+        margin: 0 10px;
+        color: white;
+        font-size: 24px;
+    }
+    .footer .social-icons a:hover {
+        color: #ddd;
+    }
+    .footer .copyright {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+
+        /*PANTALLA-BLOQUEO*/
+
+        #pantalla-bloqueo{
+            width: 100%;
+            height: calc(100% - 140.8px);
+            background-color: rgba(0, 0, 0, 0.808);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        #pantalla-bloqueo i{
+            color: white;
+            font-size: 100px;
+        }
+
+        .admin-container{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            padding: 50px;
+        }
+    
+
+        .admin-container .user-info{
+            width: 200px;
+            height: 200px;
+            background-color:#004aad;
+            border-radius: 10px;
+            margin: 50px;
+        }
+
+        .admin-container .user-info h3{
+            height: 30%;
+            color: white;
+            border-bottom: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .admin-container .user-info p{
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                .button{
+                    padding: 10px;
+                    color: white;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    transition: all 300ms;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    }
+                    .admin-container .user-info button:hover{
+                        background-color: white;
+                        color: #004aad;
+                        }
+
+                        .error-message{
+                            background: red;
+                            color: white;
+                            width: 50%;
+                            border-radius: 10px;
+                            padding: 10px;
+                            font-weight: bold;
+                            font-size: 25px;
+                            text-align: center;
+                        }

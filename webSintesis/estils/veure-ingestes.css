@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333; /* Color de texto oscuro */
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #000080; /* Azul marino */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.foodList {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0ff; /* Azul claro */
+    border-radius: 5px;
+}
+
+.foodList b {
+    color: #000080; /* Azul marino */
+}
+
+.foodList i {
+    margin-left: 10px;
+    color: #ff0000; /* Rojo */
+    cursor: pointer;
+}
+
+.foodList i:hover {
+    color: #cc0000; /* Rojo más oscuro al pasar el ratón */
+}
